@@ -3,84 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>FSTS</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        form {
-            max-width: 400px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        label {
-            display: block;
-            margin-top: 15px;
-        }
-        input, select {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        button {
-            margin-top: 20px;
-            padding: 10px;
-            width: 100%;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-    </style>
 </head>
 <body>
 
-<h1>FSTS - Formulaire d'inscription</h1>
+    <h1>Formulaire FSTS</h1>
 
-<form>
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" required>
+    <form>
+        <label>Nom:</label><br>
+        <input type="text" name="nom"><br><br>
 
-    <label for="prenom">Prénom :</label>
-    <input type="text" id="prenom" name="prenom" required>
+        <label>Prénom:</label><br>
+        <input type="text" name="prenom"><br><br>
 
-    <label for="appoge">Appogé :</label>
-    <input type="text" id="appoge" name="appoge" required>
+        <label>Appogé:</label><br>
+        <input type="text" name="appoge"><br><br>
 
-    <label for="age">Âge :</label>
-    <input type="number" id="age" name="age" min="16" max="100" required>
+        <label>Âge:</label><br>
+        <input type="number" name="age"><br><br>
 
-    <label for="filiere">Filière :</label>
-    <select id="filiere" name="filiere" required>
-        <option value="">--Choisir une filière--</option>
-        <option value="GI">GI</option>
-        <option value="GE">GE</option>
-        <option value="GM">GM</option>
-    </select>
+        <label>Filière:</label><br>
+        <select name="filiere">
+            <option value="GI">GI</option>
+            <option value="GE">GE</option>
+            <option value="GM">GM</option>
+        </select><br><br>
 
-    <label for="annee">Année :</label>
-    <select id="annee" name="annee" required>
-        <option value="">--Choisir une année--</option>
-        <option value="1ere">1ère année</option>
-        <option value="2eme">2ème année</option>
-    </select>
+        <label>Année:</label><br>
+        <select name="annee">
+            <option value="1ere">1ère année</option>
+            <option value="2eme">2ème année</option>
+        </select><br><br>
 
-    <label for="date">Date :</label>
-    <input type="date" id="date" name="date" required>
+        <label>Date:</label><br>
+        <input type="date" name="date"><br><br>
 
-    <button type="submit">Soumettre</button>
-</form>
+        <input type="submit" value="Envoyer">
+    </form>
 
 </body>
 </html>
